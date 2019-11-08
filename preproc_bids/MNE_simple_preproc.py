@@ -20,8 +20,8 @@ LineNoiseFreq = 50
 HighFreq = 45.
 LowFreq = 1
 DownSampFreq = 250
-OutputDirPath = '/Users/renaudmarquis/Vbox_shared/EEGinCMP/derivatives/sub-32/eeg'
-OutputFIFfilepath = '/Users/renaudmarquis/Vbox_shared/EEGinCMP/derivatives/sub-32/eeg/sub-32_task-rest_eeg.fif'
+OutputDirPath = './Part2_sub-32-35-36-37-38-39/derivatives/sub-32/eeg'
+OutputFIFfilepath = './Part2_sub-32-35-36-37-38-39/derivatives/sub-32/eeg/sub-32_task-rest_eeg.fif'
 
 # ===== PROCESSING =====
 
