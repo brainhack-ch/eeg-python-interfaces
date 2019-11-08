@@ -1,0 +1,13 @@
+name: EEGinCMP
+
+channels:
+- conda-forge
+- defaults
+
+dependencies:
+- python=3.6.9
+- mne=0.19.1
+- mne-bids=0.3
+
+- pip:
+    - pycartool==0.1.0
