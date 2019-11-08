@@ -1,0 +1,23 @@
+path = 'D:\projects\brainstorm_db\eegfmri_london\data';
+
+subjectNames = {'32'};
+
+import_fressurfer(subjectsNames);
+
+mni_coordinates(subjectNames);
+bem_model(subjectsNames);
+
+%import data
+%load generic 
+
+%filter data
+%manual artifact reject
+
+%import trails/segements
+
+%manual coregistration or load coregistration
+
+openmeeg_headmodel(subjectNames);
+calculateDataCovariance(subjectNames);
+calculateSources(subjectNames);
+calculateConnectivity(subjectNames);
