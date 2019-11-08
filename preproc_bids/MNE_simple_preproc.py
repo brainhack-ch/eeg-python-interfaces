@@ -1,12 +1,18 @@
 #!/usr/bin/env python
 # Preprocessing pipeline for EEG using MNE
-
+#
 # Starting from BIDS-compatible EEG dataset (EEG-fMRI)
 # available at : https://osf.io/dvmrb/
 # Pernet, C. R., Clayden, J. D., & Deligianni, F. (2019, July 4). BIDS ready data. https://doi.org/10.17605/OSF.IO/DVMRB
-
+#
 # NB: conversion of MNE datasets to BIDS format can be done using MNE-BIDS
 # See https://mne.tools/mne-bids/auto_examples/convert_mne_sample.html
+#
+# NB: PyCartool might be useful for later import of Cartool inverse solutions and forward models.
+#
+# NB: Further preprocessing might be applied, such as bad channels and bad segments detection, ICA, bad channels interpolation, ...etc.
+#     However we need more info (such as channel locations) and interactive user input (for ICA cleaning for example).
+#     This would make things much more complex for later integration with Nipype and Connectome Mapper.
 
 # ===== INPUTS =====
 InputVHDRfilepath = './Part2_sub-32-35-36-37-38-39/sub-32/eeg/sub-32_task-rest_eeg.vhdr'
